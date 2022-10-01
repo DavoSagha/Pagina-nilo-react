@@ -8,7 +8,7 @@ function Anillo(){
         src={require('../imagenes/anilloInfinito.png')}
         alt={'Anillo Infinito' }/>
         <div className='propsAnillo'>
-        <p>Precio: 500</p>
+        <p>Precio: 50</p>
         </div>
     </div>)
 }
