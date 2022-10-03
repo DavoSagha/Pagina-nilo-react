@@ -1,14 +1,17 @@
 import React from 'react'
+import '../hojas-de-estilo/Anillo.css';
 //'../imagenes/anilloInfinito.png'
-function Prueba(){
+
+function Anillo(props){
     return (
     <div className='contenedor-anillo'>
         <img 
         className='imagen-anillo'
-        src={require('../imagenes/anilloInfinito.png')}
-        alt={'Anillo Infinito' }/>
+        src={require(`../imagenes/${props.imagen}.jpg`)}
+       />
         <div className='propsAnillo'>
-        <p>Precio: 500</p>
+            <h3>Anillo {props.nombre}</h3>
+        <p>Precio: {props.precio}</p>
         </div>
     </div>)
 }
@@ -16,4 +19,4 @@ function Prueba(){
 
 //let Infinito = Anillo('../imagenes/anilloInfinito.png', 500, Infinito)
 
-export default Prueba;
+export default Anillo;

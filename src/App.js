@@ -1,12 +1,14 @@
 import './App.css';
-import Anillo from './componentes/productoAnillo'
-import Prueba from './componentes/prueba'
+import Anillo from './componentes/Anillo'
+import PlantillaPagina from './componentes/PlantillaPagina';
+
 
 function App() {
   return (
     <div className="App">
-      <Anillo/>
-      <Prueba/>
+      <div className='contenedor-principal'>
+      <PlantillaPagina/>
+      </div>
     </div>
   );
 }
