@@ -11,6 +11,7 @@ function Anillo(props){
         <div className='propsAnillo'>
             <h3>Anillo {props.nombre}</h3>
         <p>Precio: {props.precio}</p>
+        <p>Peso: {props.peso}</p>
         </div>
     </div>)
 }

@@ -9,16 +9,16 @@
 }
 
 /*HEADER SUP*/
-.header{
+header{
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
 }
 
 .header-superior{
-    max-width: 1200px;
+    max-width: 1200rem;
     margin: auto;
     display: flex;
     align-items: center;
@@ -26,40 +26,157 @@
     padding: 20px;
 }
 
-.logo {
-    width: 250px;
-    
+.header-superior-imagen {
+    width: 150px;
 }
 
 .search input{
     width: 300px;
     padding: 10px;
 }
+/*--------------------------------*/
 
 /*BARRA MENÚ*/
 .container-menu{
     width: 100%;
-    height: 70%;
-    background-color: darkgray;
+    height: 50px;
+    background-color: rgb(201, 207, 78);
     padding: 0px 20px;
 }
-.menu{
-    max-width: 1200px;
+.container-menu-menu{
+    max-width: 100%;
     margin: auto;
     height: 100%;
 
 }
 
-nav{
+.container-menu-menu nav{
     height: 100%;
 }
 
-nav > ul{
+.container-menu-menu nav > ul{
     height: 100%;
     display: flex;
 }
 
-nav > ul > li{
+.container-menu-menu nav ul li {
     height: 100%;
     list-style: none;
+    position: relative;
 }
+
+.container-menu-menu nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 50vm;
+    transition: all 300ms ease;
+}
+.container-menu-menu nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: rgb(235, 240, 84);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 5);
+}
+
+/*SUBMENU DE JOYERIA*/
+.container-menu-menu nav > ul > li > ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    position: absolute;
+    top: 110%;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+.container-menu-menu nav > ul > li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    top: 110%;
+}
+
+.container-menu-menu nav > ul > li > ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+.container-menu-menu nav > ul > li > ul > li > a{
+    display: block;
+    color: black;
+    padding: 5%;
+    margin-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+.container-menu-menu nav > ul > li > ul >li > a:hover{
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+}
+/*---------*/
+
+
+/*--------------------------------------*/
+
+/*Iconos de redes*/
+
+.redes{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+   
+}
+
+/*---------*/
+
+/*RESPONSIVE
+ @media screen and (max-width:720px){
+    .search input{
+        display: none;
+    }
+
+    .header-superior{
+        padding: 10px;
+    }
+
+    .header-superior-imagen{
+        width: 200px;
+    }
+    .container-menu-menu nav > ul{
+        flex-direction: column;
+        background-color: grey;
+        position:fixed;
+        left: 0;
+        top:158px;
+        width: 100%;
+        height: 300px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+} */
