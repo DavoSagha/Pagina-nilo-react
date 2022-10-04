@@ -1,6 +1,5 @@
 import React from 'react'
 import '../hojas-de-estilo/Anillo.css';
-//'../imagenes/anilloInfinito.png'
 
 function Anillo(props){
     return (
@@ -15,8 +14,5 @@ function Anillo(props){
         </div>
     </div>)
 }
-
-
-//let Infinito = Anillo('../imagenes/anilloInfinito.png', 500, Infinito)
 
 export default Anillo;
