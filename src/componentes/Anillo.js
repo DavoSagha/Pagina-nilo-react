@@ -2,6 +2,7 @@ import React from 'react'
 import '../hojas-de-estilo/Anillo.css';
 
 function Anillo(props){
+    let anillosCatalogo=[{}]
     return (
     <div className='contenedor-anillo'>
         <img 
