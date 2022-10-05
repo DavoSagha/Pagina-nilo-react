@@ -27,13 +27,14 @@ return (<div className='plantilla-pagina'>
             <li><a href='#'>Contacto</a></li>
             <li><a href='#'>Nosotros</a></li>
          </ul>
+         <div className='redes'>
+            <a className='redes-instagram' href='https://www.facebook.com/profile.php?id=100063985237492'><img src={require('../imagenes/facebook.png')} alt='Facebook'/></a>
+            <a className='redes-facebook' href='https://www.instagram.com/nilojoyeria/'><img src={require('../imagenes/instagram.png')} alt='Instagram'/></a>
+        </div>
         </nav>
         
         </div>
-        <div className='redes'>
-            <a className='redes-instagram' href='https://www.facebook.com/profile.php?id=100063985237492'><img src={require('../imagenes/facebooklogo.png')} alt='Facebook'/></a>
-            <a className='redes-facebook' href='https://www.instagram.com/nilojoyeria/'><img src={require('../imagenes/instagramlogo.png')} alt='Instagram'/></a>
-        </div>
+        
     </div>
 </header>
 
